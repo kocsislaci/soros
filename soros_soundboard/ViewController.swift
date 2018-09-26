@@ -101,8 +101,6 @@ class ViewController: UIViewController {
     }
     
     
-    
-
     @IBAction func notePressed(_ sender: UIButton) {
         guard
             let buttonIndex = buttons.index(of: sender)

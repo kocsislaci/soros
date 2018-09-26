@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    var aPressedButton: Array<UIButton>.Index?
     @IBOutlet var buttons: [UIButton]!
     var queuePlayer: AVQueuePlayer!
     // nem tudjuk inicializalni init idoben, viszont biztosan tudjuk kesobb e utana meg mar mindig letezni fog, tehat lehet "Implicitly Unwrapped Optional"-t hasznalni, mivel a nil eset itt szemantikailag mindig helytelen a futasido nagy reszeben, reszletesebben: "Implicitly Unwrapped Optionals" resz itten: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
@@ -101,13 +102,22 @@ class ViewController: UIViewController {
     
     @IBAction func notePressed(_ sender: UIButton) {
         
+        
         guard
+            self.queuePlayer.rate == 0,
             let buttonIndex = buttons.index(of: sender),
-            let item = self.playerItems[buttonIndex]
+            let item = self.playerItems[buttonIndex],
+            aPressedButton != buttonIndex
         else {
+            // ez a resz felbaszott mert akartam használni a buttonindexet, meg az itemet
+                self.playerItems[aPressedButton]
+            
+            self.queuePlayer.rate = 0
+            self.queuePlayer.seek(to: CMTime.zero)
+            sender.isSelected = false
             return
         }
-        
+        aPressedButton = buttonIndex
         if self.queuePlayer.timeControlStatus != .paused {
             self.queuePlayer.reset()
         }

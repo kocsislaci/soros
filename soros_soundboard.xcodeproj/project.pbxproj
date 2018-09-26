@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A759603F215BCF7B005354AD /* AVQueuePlayer+superCowPowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759603E215BCF7B005354AD /* AVQueuePlayer+superCowPowers.swift */; };
 		F8597BF721568F710084520B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8597BF621568F710084520B /* Assets.xcassets */; };
 		F86BA2E821495E3E003B5FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BA2E721495E3E003B5FAE /* AppDelegate.swift */; };
 		F86BA2EA21495E3E003B5FAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BA2E921495E3E003B5FAE /* ViewController.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A759603E215BCF7B005354AD /* AVQueuePlayer+superCowPowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVQueuePlayer+superCowPowers.swift"; sourceTree = "<group>"; };
 		F8597BF621568F710084520B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F86BA2E421495E3E003B5FAE /* soros_soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soros_soundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F86BA2E721495E3E003B5FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				F8EE065821597FFE00FC29E2 /* sounds */,
 				F86BA2E721495E3E003B5FAE /* AppDelegate.swift */,
+				A759603E215BCF7B005354AD /* AVQueuePlayer+superCowPowers.swift */,
 				F86BA2E921495E3E003B5FAE /* ViewController.swift */,
 				F86BA2EB21495E3E003B5FAE /* Main.storyboard */,
 				F8597BF621568F710084520B /* Assets.xcassets */,
@@ -407,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A759603F215BCF7B005354AD /* AVQueuePlayer+superCowPowers.swift in Sources */,
 				F86BA2EA21495E3E003B5FAE /* ViewController.swift in Sources */,
 				F86BA2E821495E3E003B5FAE /* AppDelegate.swift in Sources */,
 			);

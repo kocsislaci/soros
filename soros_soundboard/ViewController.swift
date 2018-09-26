@@ -101,11 +101,7 @@ class ViewController: UIViewController {
     }
     
     
-    private func loadAndPlayItem(item: AVPlayerItem) {
-        self.queuePlayer.removeAllItems()
-        self.queuePlayer.insert(item, after: nil)
-        self.queuePlayer.play()
-    }
+    
 
     @IBAction func notePressed(_ sender: UIButton) {
         guard
@@ -113,9 +109,15 @@ class ViewController: UIViewController {
         else {
             return
         }
-        // kerlek mindig ird ki h self.xyz, sokkal jobb ha mindig egyertelmu minek mi az eletciklusa (tudom h senki sem teszi.. de tenyleg jobb ugy)
+
+        sender.isSelected = true
         
-        self.loadAndPlayItem(item: self.playerItems[buttonIndex])
+        //check out a completion closure-t a vegen, ami akkor fut le amikor egy playback veget er
+        self.queuePlayer.loadAndPlayItem(item: self.playerItems[buttonIndex]) {
+            sender.isSelected = false
+        }
+        
+        
         
     }
     

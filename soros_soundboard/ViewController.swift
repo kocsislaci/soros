@@ -13,101 +13,109 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet var buttons: [UIButton]!
-    var player: AVPlayer!
+    var queuePlayer: AVQueuePlayer!
     // nem tudjuk inicializalni init idoben, viszont biztosan tudjuk kesobb e utana meg mar mindig letezni fog, tehat lehet "Implicitly Unwrapped Optional"-t hasznalni, mivel a nil eset itt szemantikailag mindig helytelen a futasido nagy reszeben, reszletesebben: "Implicitly Unwrapped Optionals" resz itten: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
-    let tracks = ["annyitiser",
-                  "balogorban",
-                  "befogadni",
-                  "bekopogtattak",
-                  "benak",
-                  "bloff",
-                  "bortfogokinni",
-                  "buli",
-                  "cianosindito",
-                  "cocacola",
-                  "csicska",
-                  "csokoljameg",
-                  "dugunkegyet",
-                  "egyenesbeszedu",
-                  "elofordul",
-                  "elotteisgazdagvoltam",
-                  "eloveszekegykalasnyikovot",
-                  "elutasitja",
-                  "ensz",
-                  "ezarovarbekattant",
-                  "ezatokeletes",
-                  "ezfelhaborito",
-                  "eztabalfaszt",
-                  "ezveszelyes",
-                  "fatigertek",
-                  "gyuri",
-                  "hanemnyerunk",
-                  "ihatok",
-                  "istenkuldte",
-                  "jezus",
-                  "jobbanteljesit",
-                  "jotevetszeretnek",
-                  "kaptunktizezer",
-                  "karacsony",
-                  "kigyokkigyoztak",
-                  "kiralyunk",
-                  "kormany",
-                  "kormanydolga",
-                  "kveszcson",
-                  "letezik",
-                  "maganszfera",
-                  "matolcsyadvent",
-                  "matolcsynemeztkerdeztuk",
-                  "mcdonald",
-                  "megtanuljak",
-                  "migransmentes",
-                  "nehagyjuk",
-                  "nemnezikibelolem",
-                  "nemvagyokatlag",
-                  "nobody",
-                  "nomajgrenc",
-                  "pacekba",
-                  "pliz",
-                  "rezsicsokkentes",
-                  "rofi",
-                  "rovidbeszed",
-                  "sonkakeszul",
-                  "sorosbrusszel",
-                  "stopsoros",
-                  "szelid",
-                  "szemoldokcsipesz",
-                  "szoknya",
-                  "thankyou",
-                  "urigyerek",
-                  "verem",
-                  "vizionalt"]
+    let tracks =
+        ["annyitiser",
+         "balogorban",
+         "befogadni",
+         "bekopogtattak",
+         "benak",
+         "bloff",
+         "bortfogokinni",
+         "buli",
+         "cianosindito",
+         "cocacola",
+         "csicska",
+         "csokoljameg",
+         "dugunkegyet",
+         "egyenesbeszedu",
+         "elofordul",
+         "elotteisgazdagvoltam",
+         "eloveszekegykalasnyikovot",
+         "elutasitja",
+         "ensz",
+         "ezarovarbekattant",
+         "ezatokeletes",
+         "ezfelhaborito",
+         "eztabalfaszt",
+         "ezveszelyes",
+         "fatigertek",
+         "gyuri",
+         "hanemnyerunk",
+         "ihatok",
+         "istenkuldte",
+         "jezus",
+         "jobbanteljesit",
+         "jotevetszeretnek",
+         "kaptunktizezer",
+         "karacsony",
+         "kigyokkigyoztak",
+         "kiralyunk",
+         "kormany",
+         "kormanydolga",
+         "kveszcson",
+         "letezik",
+         "maganszfera",
+         "matolcsyadvent",
+         "matolcsynemeztkerdeztuk",
+         "mcdonald",
+         "megtanuljak",
+         "migransmentes",
+         "nehagyjuk",
+         "nemnezikibelolem",
+         "nemvagyokatlag",
+         "nobody",
+         "nomajgrenc",
+         "pacekba",
+         "pliz",
+         "rezsicsokkentes",
+         "rofi",
+         "rovidbeszed",
+         "sonkakeszul",
+         "sorosbrusszel",
+         "stopsoros",
+         "szelid",
+         "szemoldokcsipesz",
+         "szoknya",
+         "thankyou",
+         "urigyerek",
+         "verem",
+         "vizionalt"]
+    
+    lazy var playerItems =
+        self.tracks.compactMap { (trackName) -> AVPlayerItem? in
+            guard
+                let url = Bundle.main.url(forResource: trackName,
+                                          withExtension: "mp3")
+                else {
+                    return nil
+            }
+            return AVPlayerItem(url: url)
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.queuePlayer = AVQueuePlayer()
+    }
+    
+    
+    private func loadAndPlayItem(item: AVPlayerItem) {
+        self.queuePlayer.removeAllItems()
+        self.queuePlayer.insert(item, after: nil)
+        self.queuePlayer.play()
     }
 
     @IBAction func notePressed(_ sender: UIButton) {
-        
-        // kerlek mindig ird ki h self.xyz, sokkal jobb ha mindig egyertelmu minek mi az eletciklusa (tudom h senki sem teszi.. de tenyleg jobb ugy)
-        if self.player.play() == false { // ha meg nem megy semmi
-           
-            if  let buttonPressed = buttons.index(of: sender) {
-                if let path = Bundle.main.path(forResource: tracks[buttonPressed], ofType : "mp3") {
-                    let url = URL(fileURLWithPath : path)
-                    do {
-                        player = try AVAudioPlayer(contentsOf: url)
-                        player.play()
-                    } catch let error {
-                        print ("There is an issue with this code! \(error.localizedDescription)")
-                    }
-                } else {
-                    print("wrong path \(tracks[buttonPressed])")
-                }
-            }
-        } else { //ha mar megy valami
-            
+        guard
+            let buttonIndex = buttons.index(of: sender)
+        else {
+            return
         }
+        // kerlek mindig ird ki h self.xyz, sokkal jobb ha mindig egyertelmu minek mi az eletciklusa (tudom h senki sem teszi.. de tenyleg jobb ugy)
+        
+        self.loadAndPlayItem(item: self.playerItems[buttonIndex])
         
     }
     

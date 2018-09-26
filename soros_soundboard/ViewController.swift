@@ -99,24 +99,22 @@ class ViewController: UIViewController {
     }
     
     
-    
-
     @IBAction func notePressed(_ sender: UIButton) {
         
         guard
-            self.queuePlayer.rate == 0,
             let buttonIndex = buttons.index(of: sender),
             let item = self.playerItems[buttonIndex]
         else {
-            self.queuePlayer.rate = 0
-            self.queuePlayer.seek(to: CMTime.zero)
-            sender.isSelected = false
             return
+        }
+        
+        if self.queuePlayer.timeControlStatus != .paused {
+            self.queuePlayer.reset()
         }
 
         sender.isSelected = true
-        //check out a completion closure-t a vegen, ami akkor fut le amikor egy playback veget er
         
+        //check out a completion closure-t a vegen, ami akkor fut le amikor egy playback veget er
         self.queuePlayer.loadAndPlayItem(item: item, completion: {
             sender.isSelected = false
         })

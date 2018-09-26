@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8597BF721568F710084520B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8597BF621568F710084520B /* Assets.xcassets */; };
+		F86BA2E821495E3E003B5FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BA2E721495E3E003B5FAE /* AppDelegate.swift */; };
+		F86BA2EA21495E3E003B5FAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BA2E921495E3E003B5FAE /* ViewController.swift */; };
+		F86BA2ED21495E3E003B5FAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86BA2EB21495E3E003B5FAE /* Main.storyboard */; };
+		F86BA2F221495E41003B5FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86BA2F021495E41003B5FAE /* LaunchScreen.storyboard */; };
+		F8EE069B2159804800FC29E2 /* ihatok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06592159804600FC29E2 /* ihatok.mp3 */; };
+		F8EE069C2159804800FC29E2 /* benak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE065A2159804600FC29E2 /* benak.mp3 */; };
+		F8EE069D2159804800FC29E2 /* kormanydolga.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE065B2159804600FC29E2 /* kormanydolga.mp3 */; };
+		F8EE069E2159804800FC29E2 /* dugunkegyet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE065C2159804600FC29E2 /* dugunkegyet.mp3 */; };
+		F8EE069F2159804800FC29E2 /* nehagyjuk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE065D2159804600FC29E2 /* nehagyjuk.mp3 */; };
+		F8EE06A02159804800FC29E2 /* befogadni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE065E2159804600FC29E2 /* befogadni.mp3 */; };
+		F8EE06A12159804800FC29E2 /* cianosindito.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE065F2159804600FC29E2 /* cianosindito.mp3 */; };
+		F8EE06A22159804800FC29E2 /* gyuri.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06602159804600FC29E2 /* gyuri.mp3 */; };
+		F8EE06A32159804800FC29E2 /* migransmentes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06612159804600FC29E2 /* migransmentes.mp3 */; };
+		F8EE06A42159804800FC29E2 /* megtanuljak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06622159804600FC29E2 /* megtanuljak.mp3 */; };
+		F8EE06A52159804800FC29E2 /* kigyokkigyoznak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06632159804600FC29E2 /* kigyokkigyoznak.mp3 */; };
+		F8EE06A62159804800FC29E2 /* ezfelhaborito.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06642159804600FC29E2 /* ezfelhaborito.mp3 */; };
+		F8EE06A72159804800FC29E2 /* ensz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06652159804600FC29E2 /* ensz.mp3 */; };
+		F8EE06A82159804800FC29E2 /* nobody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06662159804600FC29E2 /* nobody.mp3 */; };
+		F8EE06A92159804800FC29E2 /* eztabalfaszt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06672159804600FC29E2 /* eztabalfaszt.mp3 */; };
+		F8EE06AA2159804800FC29E2 /* sonkakeszul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06682159804600FC29E2 /* sonkakeszul.mp3 */; };
+		F8EE06AB2159804800FC29E2 /* vizionalt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06692159804600FC29E2 /* vizionalt.mp3 */; };
+		F8EE06AC2159804800FC29E2 /* ezarovarbekattant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE066A2159804600FC29E2 /* ezarovarbekattant.mp3 */; };
+		F8EE06AD2159804800FC29E2 /* istenkuldte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE066B2159804600FC29E2 /* istenkuldte.mp3 */; };
+		F8EE06AE2159804800FC29E2 /* ezveszelyes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE066C2159804700FC29E2 /* ezveszelyes.mp3 */; };
+		F8EE06AF2159804800FC29E2 /* mcdonald.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE066D2159804700FC29E2 /* mcdonald.mp3 */; };
+		F8EE06B02159804800FC29E2 /* cocacola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE066E2159804700FC29E2 /* cocacola.mp3 */; };
+		F8EE06B12159804800FC29E2 /* jezus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE066F2159804700FC29E2 /* jezus.mp3 */; };
+		F8EE06B22159804800FC29E2 /* kormany.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06702159804700FC29E2 /* kormany.mp3 */; };
+		F8EE06B32159804800FC29E2 /* maganszfera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06712159804700FC29E2 /* maganszfera.mp3 */; };
+		F8EE06B42159804800FC29E2 /* kveszcson.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06722159804700FC29E2 /* kveszcson.mp3 */; };
+		F8EE06B52159804800FC29E2 /* letezik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06732159804700FC29E2 /* letezik.mp3 */; };
+		F8EE06B62159804800FC29E2 /* bloff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06742159804700FC29E2 /* bloff.mp3 */; };
+		F8EE06B72159804800FC29E2 /* jobbanteljesit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06752159804700FC29E2 /* jobbanteljesit.mp3 */; };
+		F8EE06B82159804800FC29E2 /* bortfogokinni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06762159804700FC29E2 /* bortfogokinni.mp3 */; };
+		F8EE06B92159804800FC29E2 /* rofi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06772159804700FC29E2 /* rofi.mp3 */; };
+		F8EE06BA2159804800FC29E2 /* elofordul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06782159804700FC29E2 /* elofordul.mp3 */; };
+		F8EE06BB2159804800FC29E2 /* stopsoros.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06792159804700FC29E2 /* stopsoros.mp3 */; };
+		F8EE06BC2159804800FC29E2 /* szelid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE067A2159804700FC29E2 /* szelid.mp3 */; };
+		F8EE06BD2159804800FC29E2 /* matolcsynemeztkerdeztuk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE067B2159804700FC29E2 /* matolcsynemeztkerdeztuk.mp3 */; };
+		F8EE06BE2159804800FC29E2 /* thankyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE067C2159804700FC29E2 /* thankyou.mp3 */; };
+		F8EE06BF2159804800FC29E2 /* matolcsyadvent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE067D2159804700FC29E2 /* matolcsyadvent.mp3 */; };
+		F8EE06C02159804800FC29E2 /* urigyerekek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE067E2159804700FC29E2 /* urigyerekek.mp3 */; };
+		F8EE06C12159804800FC29E2 /* nemvagyokatlag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE067F2159804700FC29E2 /* nemvagyokatlag.mp3 */; };
+		F8EE06C22159804800FC29E2 /* szoknya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06802159804700FC29E2 /* szoknya.mp3 */; };
+		F8EE06C32159804800FC29E2 /* fatigertek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06812159804700FC29E2 /* fatigertek.mp3 */; };
+		F8EE06C42159804800FC29E2 /* elotteisgazdagvoltam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06822159804700FC29E2 /* elotteisgazdagvoltam.mp3 */; };
+		F8EE06C52159804800FC29E2 /* kaptunktizezer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06832159804700FC29E2 /* kaptunktizezer.mp3 */; };
+		F8EE06C62159804800FC29E2 /* csokoljameg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06842159804700FC29E2 /* csokoljameg.mp3 */; };
+		F8EE06C72159804800FC29E2 /* karacsony.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06852159804700FC29E2 /* karacsony.mp3 */; };
+		F8EE06C82159804800FC29E2 /* csicska.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06862159804700FC29E2 /* csicska.mp3 */; };
+		F8EE06C92159804800FC29E2 /* bekopogtattak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06872159804700FC29E2 /* bekopogtattak.mp3 */; };
+		F8EE06CA2159804800FC29E2 /* egyenesbeszedu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06882159804700FC29E2 /* egyenesbeszedu.mp3 */; };
+		F8EE06CB2159804800FC29E2 /* eloveszekegykalasnyikovot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06892159804700FC29E2 /* eloveszekegykalasnyikovot.mp3 */; };
+		F8EE06CC2159804800FC29E2 /* pliz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE068A2159804700FC29E2 /* pliz.mp3 */; };
+		F8EE06CD2159804800FC29E2 /* rovidbeszed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE068B2159804800FC29E2 /* rovidbeszed.mp3 */; };
+		F8EE06CE2159804800FC29E2 /* szemoldokcsipesz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE068C2159804800FC29E2 /* szemoldokcsipesz.mp3 */; };
+		F8EE06CF2159804800FC29E2 /* sorosbrusszel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE068D2159804800FC29E2 /* sorosbrusszel.mp3 */; };
+		F8EE06D02159804800FC29E2 /* ezatokeletes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE068E2159804800FC29E2 /* ezatokeletes.mp3 */; };
+		F8EE06D12159804800FC29E2 /* rezsicsokkentes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE068F2159804800FC29E2 /* rezsicsokkentes.mp3 */; };
+		F8EE06D22159804800FC29E2 /* kiralyunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06902159804800FC29E2 /* kiralyunk.mp3 */; };
+		F8EE06D32159804800FC29E2 /* pacekba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06912159804800FC29E2 /* pacekba.mp3 */; };
+		F8EE06D42159804800FC29E2 /* verem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06922159804800FC29E2 /* verem.mp3 */; };
+		F8EE06D52159804800FC29E2 /* balogorban.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06932159804800FC29E2 /* balogorban.mp3 */; };
+		F8EE06D62159804800FC29E2 /* jotevetszeretnek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06942159804800FC29E2 /* jotevetszeretnek.mp3 */; };
+		F8EE06D72159804800FC29E2 /* nemnezikibelolem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06952159804800FC29E2 /* nemnezikibelolem.mp3 */; };
+		F8EE06D82159804800FC29E2 /* elutasitja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06962159804800FC29E2 /* elutasitja.mp3 */; };
+		F8EE06D92159804800FC29E2 /* buli.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06972159804800FC29E2 /* buli.mp3 */; };
+		F8EE06DA2159804800FC29E2 /* hanemnyerunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06982159804800FC29E2 /* hanemnyerunk.mp3 */; };
+		F8EE06DB2159804800FC29E2 /* annyitiser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE06992159804800FC29E2 /* annyitiser.mp3 */; };
+		F8EE06DC2159804800FC29E2 /* nomajgrenc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8EE069A2159804800FC29E2 /* nomajgrenc.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8597BF621568F710084520B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F86BA2E421495E3E003B5FAE /* soros_soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soros_soundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86BA2E721495E3E003B5FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F86BA2E921495E3E003B5FAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F86BA2EC21495E3E003B5FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F86BA2F121495E41003B5FAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F86BA2F321495E41003B5FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EE06592159804600FC29E2 /* ihatok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ihatok.mp3; sourceTree = "<group>"; };
+		F8EE065A2159804600FC29E2 /* benak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = benak.mp3; sourceTree = "<group>"; };
+		F8EE065B2159804600FC29E2 /* kormanydolga.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kormanydolga.mp3; sourceTree = "<group>"; };
+		F8EE065C2159804600FC29E2 /* dugunkegyet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dugunkegyet.mp3; sourceTree = "<group>"; };
+		F8EE065D2159804600FC29E2 /* nehagyjuk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nehagyjuk.mp3; sourceTree = "<group>"; };
+		F8EE065E2159804600FC29E2 /* befogadni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = befogadni.mp3; sourceTree = "<group>"; };
+		F8EE065F2159804600FC29E2 /* cianosindito.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cianosindito.mp3; sourceTree = "<group>"; };
+		F8EE06602159804600FC29E2 /* gyuri.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gyuri.mp3; sourceTree = "<group>"; };
+		F8EE06612159804600FC29E2 /* migransmentes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = migransmentes.mp3; sourceTree = "<group>"; };
+		F8EE06622159804600FC29E2 /* megtanuljak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = megtanuljak.mp3; sourceTree = "<group>"; };
+		F8EE06632159804600FC29E2 /* kigyokkigyoznak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kigyokkigyoznak.mp3; sourceTree = "<group>"; };
+		F8EE06642159804600FC29E2 /* ezfelhaborito.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ezfelhaborito.mp3; sourceTree = "<group>"; };
+		F8EE06652159804600FC29E2 /* ensz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ensz.mp3; sourceTree = "<group>"; };
+		F8EE06662159804600FC29E2 /* nobody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nobody.mp3; sourceTree = "<group>"; };
+		F8EE06672159804600FC29E2 /* eztabalfaszt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eztabalfaszt.mp3; sourceTree = "<group>"; };
+		F8EE06682159804600FC29E2 /* sonkakeszul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sonkakeszul.mp3; sourceTree = "<group>"; };
+		F8EE06692159804600FC29E2 /* vizionalt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vizionalt.mp3; sourceTree = "<group>"; };
+		F8EE066A2159804600FC29E2 /* ezarovarbekattant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ezarovarbekattant.mp3; sourceTree = "<group>"; };
+		F8EE066B2159804600FC29E2 /* istenkuldte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = istenkuldte.mp3; sourceTree = "<group>"; };
+		F8EE066C2159804700FC29E2 /* ezveszelyes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ezveszelyes.mp3; sourceTree = "<group>"; };
+		F8EE066D2159804700FC29E2 /* mcdonald.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mcdonald.mp3; sourceTree = "<group>"; };
+		F8EE066E2159804700FC29E2 /* cocacola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cocacola.mp3; sourceTree = "<group>"; };
+		F8EE066F2159804700FC29E2 /* jezus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jezus.mp3; sourceTree = "<group>"; };
+		F8EE06702159804700FC29E2 /* kormany.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kormany.mp3; sourceTree = "<group>"; };
+		F8EE06712159804700FC29E2 /* maganszfera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maganszfera.mp3; sourceTree = "<group>"; };
+		F8EE06722159804700FC29E2 /* kveszcson.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kveszcson.mp3; sourceTree = "<group>"; };
+		F8EE06732159804700FC29E2 /* letezik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = letezik.mp3; sourceTree = "<group>"; };
+		F8EE06742159804700FC29E2 /* bloff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bloff.mp3; sourceTree = "<group>"; };
+		F8EE06752159804700FC29E2 /* jobbanteljesit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jobbanteljesit.mp3; sourceTree = "<group>"; };
+		F8EE06762159804700FC29E2 /* bortfogokinni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bortfogokinni.mp3; sourceTree = "<group>"; };
+		F8EE06772159804700FC29E2 /* rofi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rofi.mp3; sourceTree = "<group>"; };
+		F8EE06782159804700FC29E2 /* elofordul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elofordul.mp3; sourceTree = "<group>"; };
+		F8EE06792159804700FC29E2 /* stopsoros.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stopsoros.mp3; sourceTree = "<group>"; };
+		F8EE067A2159804700FC29E2 /* szelid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = szelid.mp3; sourceTree = "<group>"; };
+		F8EE067B2159804700FC29E2 /* matolcsynemeztkerdeztuk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = matolcsynemeztkerdeztuk.mp3; sourceTree = "<group>"; };
+		F8EE067C2159804700FC29E2 /* thankyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thankyou.mp3; sourceTree = "<group>"; };
+		F8EE067D2159804700FC29E2 /* matolcsyadvent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = matolcsyadvent.mp3; sourceTree = "<group>"; };
+		F8EE067E2159804700FC29E2 /* urigyerekek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = urigyerekek.mp3; sourceTree = "<group>"; };
+		F8EE067F2159804700FC29E2 /* nemvagyokatlag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nemvagyokatlag.mp3; sourceTree = "<group>"; };
+		F8EE06802159804700FC29E2 /* szoknya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = szoknya.mp3; sourceTree = "<group>"; };
+		F8EE06812159804700FC29E2 /* fatigertek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fatigertek.mp3; sourceTree = "<group>"; };
+		F8EE06822159804700FC29E2 /* elotteisgazdagvoltam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elotteisgazdagvoltam.mp3; sourceTree = "<group>"; };
+		F8EE06832159804700FC29E2 /* kaptunktizezer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaptunktizezer.mp3; sourceTree = "<group>"; };
+		F8EE06842159804700FC29E2 /* csokoljameg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = csokoljameg.mp3; sourceTree = "<group>"; };
+		F8EE06852159804700FC29E2 /* karacsony.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = karacsony.mp3; sourceTree = "<group>"; };
+		F8EE06862159804700FC29E2 /* csicska.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = csicska.mp3; sourceTree = "<group>"; };
+		F8EE06872159804700FC29E2 /* bekopogtattak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bekopogtattak.mp3; sourceTree = "<group>"; };
+		F8EE06882159804700FC29E2 /* egyenesbeszedu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = egyenesbeszedu.mp3; sourceTree = "<group>"; };
+		F8EE06892159804700FC29E2 /* eloveszekegykalasnyikovot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eloveszekegykalasnyikovot.mp3; sourceTree = "<group>"; };
+		F8EE068A2159804700FC29E2 /* pliz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pliz.mp3; sourceTree = "<group>"; };
+		F8EE068B2159804800FC29E2 /* rovidbeszed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rovidbeszed.mp3; sourceTree = "<group>"; };
+		F8EE068C2159804800FC29E2 /* szemoldokcsipesz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = szemoldokcsipesz.mp3; sourceTree = "<group>"; };
+		F8EE068D2159804800FC29E2 /* sorosbrusszel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sorosbrusszel.mp3; sourceTree = "<group>"; };
+		F8EE068E2159804800FC29E2 /* ezatokeletes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ezatokeletes.mp3; sourceTree = "<group>"; };
+		F8EE068F2159804800FC29E2 /* rezsicsokkentes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rezsicsokkentes.mp3; sourceTree = "<group>"; };
+		F8EE06902159804800FC29E2 /* kiralyunk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kiralyunk.mp3; sourceTree = "<group>"; };
+		F8EE06912159804800FC29E2 /* pacekba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pacekba.mp3; sourceTree = "<group>"; };
+		F8EE06922159804800FC29E2 /* verem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = verem.mp3; sourceTree = "<group>"; };
+		F8EE06932159804800FC29E2 /* balogorban.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = balogorban.mp3; sourceTree = "<group>"; };
+		F8EE06942159804800FC29E2 /* jotevetszeretnek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jotevetszeretnek.mp3; sourceTree = "<group>"; };
+		F8EE06952159804800FC29E2 /* nemnezikibelolem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nemnezikibelolem.mp3; sourceTree = "<group>"; };
+		F8EE06962159804800FC29E2 /* elutasitja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elutasitja.mp3; sourceTree = "<group>"; };
+		F8EE06972159804800FC29E2 /* buli.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buli.mp3; sourceTree = "<group>"; };
+		F8EE06982159804800FC29E2 /* hanemnyerunk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hanemnyerunk.mp3; sourceTree = "<group>"; };
+		F8EE06992159804800FC29E2 /* annyitiser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = annyitiser.mp3; sourceTree = "<group>"; };
+		F8EE069A2159804800FC29E2 /* nomajgrenc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nomajgrenc.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F86BA2E121495E3D003B5FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F86BA2DB21495E3D003B5FAE = {
+			isa = PBXGroup;
+			children = (
+				F86BA2E621495E3E003B5FAE /* soros_soundboard */,
+				F86BA2E521495E3E003B5FAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F86BA2E521495E3E003B5FAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F86BA2E421495E3E003B5FAE /* soros_soundboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F86BA2E621495E3E003B5FAE /* soros_soundboard */ = {
+			isa = PBXGroup;
+			children = (
+				F8EE065821597FFE00FC29E2 /* sounds */,
+				F86BA2E721495E3E003B5FAE /* AppDelegate.swift */,
+				F86BA2E921495E3E003B5FAE /* ViewController.swift */,
+				F86BA2EB21495E3E003B5FAE /* Main.storyboard */,
+				F8597BF621568F710084520B /* Assets.xcassets */,
+				F86BA2F021495E41003B5FAE /* LaunchScreen.storyboard */,
+				F86BA2F321495E41003B5FAE /* Info.plist */,
+			);
+			path = soros_soundboard;
+			sourceTree = "<group>";
+		};
+		F8EE065821597FFE00FC29E2 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F8EE06992159804800FC29E2 /* annyitiser.mp3 */,
+				F8EE06932159804800FC29E2 /* balogorban.mp3 */,
+				F8EE065E2159804600FC29E2 /* befogadni.mp3 */,
+				F8EE06872159804700FC29E2 /* bekopogtattak.mp3 */,
+				F8EE065A2159804600FC29E2 /* benak.mp3 */,
+				F8EE06742159804700FC29E2 /* bloff.mp3 */,
+				F8EE06762159804700FC29E2 /* bortfogokinni.mp3 */,
+				F8EE06972159804800FC29E2 /* buli.mp3 */,
+				F8EE065F2159804600FC29E2 /* cianosindito.mp3 */,
+				F8EE066E2159804700FC29E2 /* cocacola.mp3 */,
+				F8EE06862159804700FC29E2 /* csicska.mp3 */,
+				F8EE06842159804700FC29E2 /* csokoljameg.mp3 */,
+				F8EE065C2159804600FC29E2 /* dugunkegyet.mp3 */,
+				F8EE06882159804700FC29E2 /* egyenesbeszedu.mp3 */,
+				F8EE06782159804700FC29E2 /* elofordul.mp3 */,
+				F8EE06822159804700FC29E2 /* elotteisgazdagvoltam.mp3 */,
+				F8EE06892159804700FC29E2 /* eloveszekegykalasnyikovot.mp3 */,
+				F8EE06962159804800FC29E2 /* elutasitja.mp3 */,
+				F8EE06652159804600FC29E2 /* ensz.mp3 */,
+				F8EE066A2159804600FC29E2 /* ezarovarbekattant.mp3 */,
+				F8EE068E2159804800FC29E2 /* ezatokeletes.mp3 */,
+				F8EE06642159804600FC29E2 /* ezfelhaborito.mp3 */,
+				F8EE06672159804600FC29E2 /* eztabalfaszt.mp3 */,
+				F8EE066C2159804700FC29E2 /* ezveszelyes.mp3 */,
+				F8EE06812159804700FC29E2 /* fatigertek.mp3 */,
+				F8EE06602159804600FC29E2 /* gyuri.mp3 */,
+				F8EE06982159804800FC29E2 /* hanemnyerunk.mp3 */,
+				F8EE06592159804600FC29E2 /* ihatok.mp3 */,
+				F8EE066B2159804600FC29E2 /* istenkuldte.mp3 */,
+				F8EE066F2159804700FC29E2 /* jezus.mp3 */,
+				F8EE06752159804700FC29E2 /* jobbanteljesit.mp3 */,
+				F8EE06942159804800FC29E2 /* jotevetszeretnek.mp3 */,
+				F8EE06832159804700FC29E2 /* kaptunktizezer.mp3 */,
+				F8EE06852159804700FC29E2 /* karacsony.mp3 */,
+				F8EE06632159804600FC29E2 /* kigyokkigyoznak.mp3 */,
+				F8EE06902159804800FC29E2 /* kiralyunk.mp3 */,
+				F8EE06702159804700FC29E2 /* kormany.mp3 */,
+				F8EE065B2159804600FC29E2 /* kormanydolga.mp3 */,
+				F8EE06722159804700FC29E2 /* kveszcson.mp3 */,
+				F8EE06732159804700FC29E2 /* letezik.mp3 */,
+				F8EE06712159804700FC29E2 /* maganszfera.mp3 */,
+				F8EE067D2159804700FC29E2 /* matolcsyadvent.mp3 */,
+				F8EE067B2159804700FC29E2 /* matolcsynemeztkerdeztuk.mp3 */,
+				F8EE066D2159804700FC29E2 /* mcdonald.mp3 */,
+				F8EE06622159804600FC29E2 /* megtanuljak.mp3 */,
+				F8EE06612159804600FC29E2 /* migransmentes.mp3 */,
+				F8EE065D2159804600FC29E2 /* nehagyjuk.mp3 */,
+				F8EE06952159804800FC29E2 /* nemnezikibelolem.mp3 */,
+				F8EE067F2159804700FC29E2 /* nemvagyokatlag.mp3 */,
+				F8EE06662159804600FC29E2 /* nobody.mp3 */,
+				F8EE069A2159804800FC29E2 /* nomajgrenc.mp3 */,
+				F8EE06912159804800FC29E2 /* pacekba.mp3 */,
+				F8EE068A2159804700FC29E2 /* pliz.mp3 */,
+				F8EE068F2159804800FC29E2 /* rezsicsokkentes.mp3 */,
+				F8EE06772159804700FC29E2 /* rofi.mp3 */,
+				F8EE068B2159804800FC29E2 /* rovidbeszed.mp3 */,
+				F8EE06682159804600FC29E2 /* sonkakeszul.mp3 */,
+				F8EE068D2159804800FC29E2 /* sorosbrusszel.mp3 */,
+				F8EE06792159804700FC29E2 /* stopsoros.mp3 */,
+				F8EE067A2159804700FC29E2 /* szelid.mp3 */,
+				F8EE068C2159804800FC29E2 /* szemoldokcsipesz.mp3 */,
+				F8EE06802159804700FC29E2 /* szoknya.mp3 */,
+				F8EE067C2159804700FC29E2 /* thankyou.mp3 */,
+				F8EE067E2159804700FC29E2 /* urigyerekek.mp3 */,
+				F8EE06922159804800FC29E2 /* verem.mp3 */,
+				F8EE06692159804600FC29E2 /* vizionalt.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F86BA2E321495E3D003B5FAE /* soros_soundboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86BA2F621495E41003B5FAE /* Build configuration list for PBXNativeTarget "soros_soundboard" */;
+			buildPhases = (
+				F86BA2E021495E3D003B5FAE /* Sources */,
+				F86BA2E121495E3D003B5FAE /* Frameworks */,
+				F86BA2E221495E3D003B5FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = soros_soundboard;
+			productName = soros_soundboard;
+			productReference = F86BA2E421495E3E003B5FAE /* soros_soundboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F86BA2DC21495E3D003B5FAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Laszlo Kocsis";
+				TargetAttributes = {
+					F86BA2E321495E3D003B5FAE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F86BA2DF21495E3D003B5FAE /* Build configuration list for PBXProject "soros_soundboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F86BA2DB21495E3D003B5FAE;
+			productRefGroup = F86BA2E521495E3E003B5FAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F86BA2E321495E3D003B5FAE /* soros_soundboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F86BA2E221495E3D003B5FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EE06B72159804800FC29E2 /* jobbanteljesit.mp3 in Resources */,
+				F8EE06B32159804800FC29E2 /* maganszfera.mp3 in Resources */,
+				F8EE06B82159804800FC29E2 /* bortfogokinni.mp3 in Resources */,
+				F8EE06C52159804800FC29E2 /* kaptunktizezer.mp3 in Resources */,
+				F8EE069C2159804800FC29E2 /* benak.mp3 in Resources */,
+				F8EE069F2159804800FC29E2 /* nehagyjuk.mp3 in Resources */,
+				F8EE06C72159804800FC29E2 /* karacsony.mp3 in Resources */,
+				F8EE06C92159804800FC29E2 /* bekopogtattak.mp3 in Resources */,
+				F8EE06CE2159804800FC29E2 /* szemoldokcsipesz.mp3 in Resources */,
+				F8EE06A62159804800FC29E2 /* ezfelhaborito.mp3 in Resources */,
+				F8EE06AE2159804800FC29E2 /* ezveszelyes.mp3 in Resources */,
+				F8EE06A12159804800FC29E2 /* cianosindito.mp3 in Resources */,
+				F8EE06C62159804800FC29E2 /* csokoljameg.mp3 in Resources */,
+				F8EE06CD2159804800FC29E2 /* rovidbeszed.mp3 in Resources */,
+				F8EE069B2159804800FC29E2 /* ihatok.mp3 in Resources */,
+				F8EE06D42159804800FC29E2 /* verem.mp3 in Resources */,
+				F8EE06CF2159804800FC29E2 /* sorosbrusszel.mp3 in Resources */,
+				F8EE06BD2159804800FC29E2 /* matolcsynemeztkerdeztuk.mp3 in Resources */,
+				F8EE06D02159804800FC29E2 /* ezatokeletes.mp3 in Resources */,
+				F8EE06C32159804800FC29E2 /* fatigertek.mp3 in Resources */,
+				F8EE06D62159804800FC29E2 /* jotevetszeretnek.mp3 in Resources */,
+				F8EE06B12159804800FC29E2 /* jezus.mp3 in Resources */,
+				F8EE06BC2159804800FC29E2 /* szelid.mp3 in Resources */,
+				F8EE06CA2159804800FC29E2 /* egyenesbeszedu.mp3 in Resources */,
+				F8EE06CC2159804800FC29E2 /* pliz.mp3 in Resources */,
+				F8EE06A32159804800FC29E2 /* migransmentes.mp3 in Resources */,
+				F8EE06A72159804800FC29E2 /* ensz.mp3 in Resources */,
+				F8EE06DA2159804800FC29E2 /* hanemnyerunk.mp3 in Resources */,
+				F8EE06B22159804800FC29E2 /* kormany.mp3 in Resources */,
+				F8EE06C22159804800FC29E2 /* szoknya.mp3 in Resources */,
+				F8EE06BE2159804800FC29E2 /* thankyou.mp3 in Resources */,
+				F8EE06AB2159804800FC29E2 /* vizionalt.mp3 in Resources */,
+				F8EE06B92159804800FC29E2 /* rofi.mp3 in Resources */,
+				F8EE06C12159804800FC29E2 /* nemvagyokatlag.mp3 in Resources */,
+				F86BA2F221495E41003B5FAE /* LaunchScreen.storyboard in Resources */,
+				F8EE06A82159804800FC29E2 /* nobody.mp3 in Resources */,
+				F8EE06A52159804800FC29E2 /* kigyokkigyoznak.mp3 in Resources */,
+				F8EE06B52159804800FC29E2 /* letezik.mp3 in Resources */,
+				F8EE06B42159804800FC29E2 /* kveszcson.mp3 in Resources */,
+				F8EE06D92159804800FC29E2 /* buli.mp3 in Resources */,
+				F8EE06CB2159804800FC29E2 /* eloveszekegykalasnyikovot.mp3 in Resources */,
+				F8EE06D22159804800FC29E2 /* kiralyunk.mp3 in Resources */,
+				F8597BF721568F710084520B /* Assets.xcassets in Resources */,
+				F8EE069D2159804800FC29E2 /* kormanydolga.mp3 in Resources */,
+				F8EE06B62159804800FC29E2 /* bloff.mp3 in Resources */,
+				F8EE06BB2159804800FC29E2 /* stopsoros.mp3 in Resources */,
+				F8EE06A42159804800FC29E2 /* megtanuljak.mp3 in Resources */,
+				F8EE069E2159804800FC29E2 /* dugunkegyet.mp3 in Resources */,
+				F8EE06C02159804800FC29E2 /* urigyerekek.mp3 in Resources */,
+				F86BA2ED21495E3E003B5FAE /* Main.storyboard in Resources */,
+				F8EE06DC2159804800FC29E2 /* nomajgrenc.mp3 in Resources */,
+				F8EE06D52159804800FC29E2 /* balogorban.mp3 in Resources */,
+				F8EE06BF2159804800FC29E2 /* matolcsyadvent.mp3 in Resources */,
+				F8EE06AA2159804800FC29E2 /* sonkakeszul.mp3 in Resources */,
+				F8EE06C42159804800FC29E2 /* elotteisgazdagvoltam.mp3 in Resources */,
+				F8EE06BA2159804800FC29E2 /* elofordul.mp3 in Resources */,
+				F8EE06AD2159804800FC29E2 /* istenkuldte.mp3 in Resources */,
+				F8EE06D12159804800FC29E2 /* rezsicsokkentes.mp3 in Resources */,
+				F8EE06D82159804800FC29E2 /* elutasitja.mp3 in Resources */,
+				F8EE06C82159804800FC29E2 /* csicska.mp3 in Resources */,
+				F8EE06A92159804800FC29E2 /* eztabalfaszt.mp3 in Resources */,
+				F8EE06AF2159804800FC29E2 /* mcdonald.mp3 in Resources */,
+				F8EE06A02159804800FC29E2 /* befogadni.mp3 in Resources */,
+				F8EE06DB2159804800FC29E2 /* annyitiser.mp3 in Resources */,
+				F8EE06D32159804800FC29E2 /* pacekba.mp3 in Resources */,
+				F8EE06D72159804800FC29E2 /* nemnezikibelolem.mp3 in Resources */,
+				F8EE06AC2159804800FC29E2 /* ezarovarbekattant.mp3 in Resources */,
+				F8EE06A22159804800FC29E2 /* gyuri.mp3 in Resources */,
+				F8EE06B02159804800FC29E2 /* cocacola.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F86BA2E021495E3D003B5FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86BA2EA21495E3E003B5FAE /* ViewController.swift in Sources */,
+				F86BA2E821495E3E003B5FAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F86BA2EB21495E3E003B5FAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86BA2EC21495E3E003B5FAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F86BA2F021495E41003B5FAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86BA2F121495E41003B5FAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F86BA2F421495E41003B5FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F86BA2F521495E41003B5FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F86BA2F721495E41003B5FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G8TY2M8CZ;
+				INFOPLIST_FILE = soros_soundboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.kocsislaci.soros-soundboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F86BA2F821495E41003B5FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G8TY2M8CZ;
+				INFOPLIST_FILE = soros_soundboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.kocsislaci.soros-soundboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F86BA2DF21495E3D003B5FAE /* Build configuration list for PBXProject "soros_soundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86BA2F421495E41003B5FAE /* Debug */,
+				F86BA2F521495E41003B5FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86BA2F621495E41003B5FAE /* Build configuration list for PBXNativeTarget "soros_soundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86BA2F721495E41003B5FAE /* Debug */,
+				F86BA2F821495E41003B5FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F86BA2DC21495E3D003B5FAE /* Project object */;
+}

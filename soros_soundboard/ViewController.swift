@@ -13,7 +13,8 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet var buttons: [UIButton]!
-    var player = AVAudioPlayer()
+    var player: AVPlayer!
+    // nem tudjuk inicializalni init idoben, viszont biztosan tudjuk kesobb e utana meg mar mindig letezni fog, tehat lehet "Implicitly Unwrapped Optional"-t hasznalni, mivel a nil eset itt szemantikailag mindig helytelen a futasido nagy reszeben, reszletesebben: "Implicitly Unwrapped Optionals" resz itten: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
     let tracks = ["annyitiser",
                   "balogorban",
                   "befogadni",
@@ -88,7 +89,8 @@ class ViewController: UIViewController {
 
     @IBAction func notePressed(_ sender: UIButton) {
         
-        if player.play() == false { // ha meg nem megy semmi
+        // kerlek mindig ird ki h self.xyz, sokkal jobb ha mindig egyertelmu minek mi az eletciklusa (tudom h senki sem teszi.. de tenyleg jobb ugy)
+        if self.player.play() == false { // ha meg nem megy semmi
            
             if  let buttonPressed = buttons.index(of: sender) {
                 if let path = Bundle.main.path(forResource: tracks[buttonPressed], ofType : "mp3") {
@@ -96,8 +98,8 @@ class ViewController: UIViewController {
                     do {
                         player = try AVAudioPlayer(contentsOf: url)
                         player.play()
-                    } catch {
-                        print ("There is an issue with this code!")
+                    } catch let error {
+                        print ("There is an issue with this code! \(error.localizedDescription)")
                     }
                 } else {
                     print("wrong path \(tracks[buttonPressed])")

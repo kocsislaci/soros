@@ -28,6 +28,14 @@ extension AVPlayerItem {
 
 extension AVQueuePlayer {
     
+    func reset() {
+        self.items().forEach { (oldItem) in
+            oldItem._playerItemDidReachEndOrFailed?()
+            oldItem._playerItemDidReachEndOrFailed = nil
+        }
+        self.removeAllItems()
+    }
+    
     func loadAndPlayItem(item: AVPlayerItem, completion: DidReachEndHandler? = nil) {
         
         item.seek(to: CMTime.zero) { (succ) in

@@ -9,9 +9,7 @@
 import UIKit
 import AVFoundation
 
-
 class ViewController: UIViewController {
-    
     @IBOutlet var buttons: [UIButton]!
     var queuePlayer: AVQueuePlayer!
     // nem tudjuk inicializalni init idoben, viszont biztosan tudjuk kesobb e utana meg mar mindig letezni fog, tehat lehet "Implicitly Unwrapped Optional"-t hasznalni, mivel a nil eset itt szemantikailag mindig helytelen a futasido nagy reszeben, reszletesebben: "Implicitly Unwrapped Optionals" resz itten: https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
@@ -84,12 +82,12 @@ class ViewController: UIViewController {
          "vizionalt"]
     
     lazy var playerItems =
-        self.tracks.compactMap { (trackName) -> AVPlayerItem? in
+        self.tracks.map { (trackName) -> AVPlayerItem? in
             guard
                 let url = Bundle.main.url(forResource: trackName,
                                           withExtension: "mp3")
-                else {
-                    return nil
+            else {
+                return nil
             }
             return AVPlayerItem(url: url)
         }
@@ -102,18 +100,24 @@ class ViewController: UIViewController {
     
     
     @IBAction func notePressed(_ sender: UIButton) {
+        
         guard
-            let buttonIndex = buttons.index(of: sender)
+            let buttonIndex = buttons.index(of: sender),
+            let item = self.playerItems[buttonIndex]
         else {
             return
+        }
+        
+        if self.queuePlayer.timeControlStatus != .paused {
+            self.queuePlayer.reset()
         }
 
         sender.isSelected = true
         
         //check out a completion closure-t a vegen, ami akkor fut le amikor egy playback veget er
-        self.queuePlayer.loadAndPlayItem(item: self.playerItems[buttonIndex]) {
+        self.queuePlayer.loadAndPlayItem(item: item, completion: {
             sender.isSelected = false
-        }
+        })
         
         
         
